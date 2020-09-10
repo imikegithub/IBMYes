@@ -68,9 +68,13 @@ $CF login -a https://api.us-south.cf.cloud.ibm.com <<EOF
 $IBM_ACCOUNT
 EOF
 
-#cd ./v2ray-cloudfoundry
+cd ./v2ray-cloudfoundry
+mkdir v
+mv ./v2ray/v2ray ./v/v
+mv ./v2ray/v2ctl ./v/v2ctl
+mv ./v2ray/config.json /v/config.json
 #echo "${BLUE}ibmcloud cf push${END}"
 #$IBMCLOUD cf push
 #echo "${BLUE}cf push${END}"
-#$CF push
-$IBMCLOUD cf restart $IBM_APP_NAME
+$CF push
+#$IBMCLOUD cf restart $IBM_APP_NAME
