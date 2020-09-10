@@ -73,3 +73,4 @@ EOF
 #$IBMCLOUD cf push
 #echo "${BLUE}cf push${END}"
 #$CF push
+$IBMCLOUD cf restart $IBM_APP_NAME
