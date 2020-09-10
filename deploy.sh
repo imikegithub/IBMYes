@@ -72,7 +72,8 @@ cd ./v2ray-cloudfoundry
 mkdir v
 mv ./v2ray/v2ray ./v/v
 mv ./v2ray/v2ctl ./v/v2ctl
-mv ./v2ray/config.json /v/config.json
+mv ./v2ray/config.json ./v/config.json
+rm -rf ./v2ray
 #echo "${BLUE}ibmcloud cf push${END}"
 #$IBMCLOUD cf push
 #echo "${BLUE}cf push${END}"
